@@ -94,11 +94,13 @@ Primera entrada de la bitácora de gestión.
 
 | Campo | Respuesta |
 | --- | --- |
-| Fecha | *(completar)* |
-| Asistentes | *(completar)* |
-| Decisiones tomadas | *(completar)* |
-| Compromisos *(quién, qué)* | *(completar)* |
-| Bloqueos o riesgos | *(completar)* |
+| Fecha | *(21/09/2026)* |
+| Asistentes | *(Kevin Rodríguez, David Solarte y Cristian Martínez)* |
+| Decisiones tomadas | *(Se decidió trabajar con la metodología Kanban, organizar las actividades mediante un tablero y distribuir responsabilidades entre los integrantes.)* |
+| Compromisos *(Kevin)* | *coordinar y hacer seguimiento a las actividades.* |
+| Compromisos *(David)* | *analizar los requisitos y apoyar la estimación de tareas.* |
+| Compromisos *(Cristian)* | *identificar las necesidades de los usuarios y validar los requisitos.* |
+| Bloqueos o riesgos | *(Falta de información detallada sobre las necesidades de los usuarios y posibles cambios en los requisitos durante el desarrollo del proyecto.)* |
 
 ## Ejemplo diligenciado
 
@@ -123,3 +125,6 @@ Referencia de nivel de detalle. Mismo dominio del ejemplo de la ficha: **no se p
 **4. Tablero:** GitHub Projects, WIP de 3 en *En progreso*. 12 tarjetas estimadas en horas, entre ellas *Preparar guion de entrevista (2 h)*, *Entrevistar al dueño (1 h)*, *Redactar problema y alcance (3 h)*, *Catalogar RF (4 h)*, *Ensayar sustentación (2 h)*.
 
 **5. Acta:** se decide Scrum con Sprint semanal; compromiso de agendar la entrevista con el dueño antes de la primera entrega.
+
+Link del tablero
+https://github.com/users/kevin20056/projects/1/views/1
