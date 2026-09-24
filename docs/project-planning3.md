@@ -115,12 +115,11 @@ Convertir las notas propias en requisitos candidatos. Todavía no es el catálog
 | RF-01 | El sistema debe permitir registrar los productos o elementos que hacen parte del inventario.                                         | Must                 | P2     |
 | RF-02 | El sistema debe permitir registrar y consultar las cantidades disponibles de los elementos del inventario.                           | Must                 | P5     |
 | RF-03 | El sistema debe permitir registrar las entradas y salidas de elementos del inventario.                                               | Must                 | P2     |
-| RF-04 | El sistema debe permitir registrar la ubicación de los equipos o elementos del inventario.                                           | Must                 | P6     |
-| RF-05 | El sistema debe permitir registrar los movimientos de los equipos o elementos del inventario.                                        | Must                 | P6     |
+| RF-05 | El sistema debe permitir registrar los movimientos en los equipos o elementos del inventario.                                        | Must                 | P6     |
 | RF-06 | El sistema debe permitir identificar quién realizó un movimiento o modificación en la información del inventario.                    | Should               | P3     |
 | RF-07 | El sistema debe permitir consultar rápidamente la cantidad de material disponible.                                                   | Must                 | P5     |
 | RF-08 | El sistema debe permitir consultar los costos asociados a los materiales registrados.                                                | Must                 | P5     |
-| RF-09 | El sistema debe permitir calcular el costo de producción de un producto o trabajo considerando los materiales y recursos utilizados. | Must                 | P4     |
+| RF-09 | El sistema debe permitir calcular el costo de producción de un producto o trabajo considerando los materiales y recursos utilizados. | Should                 | P4     |
 | RF-10 | El sistema debe permitir administrar usuarios y asignar permisos según su rol.                                                       | Must                 | P10    |
 | RF-11 | El sistema debe permitir modificar o eliminar información de productos o elementos registrados, según los permisos del usuario.      | Should               | P2     |
 | RF-12 | El sistema debe permitir consultar la información necesaria para verificar la existencia y ubicación de los equipos o elementos.     | Should               | P6     |
