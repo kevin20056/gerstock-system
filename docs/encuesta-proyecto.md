@@ -37,11 +37,9 @@ Esto evidencia la necesidad de registrar los movimientos y mantener actualizado 
 RESPUESTA:
 Cuando varias personas manejan la misma información pueden ocurrir errores, especialmente cuando los empleados mueven o intercambian equipos sin actualizar el registro.
 
-Un problema frecuente es que un trabajador cambie un computador o monitor de puesto y no informe el movimiento.
-
 Esto provoca que la información del inventario no coincida con la ubicación real de los equipos.
 
-En auditorías de una zona franca, la empresa debe demostrar que sus activos se encuentran físicamente donde están registrados.
+Si un trabajador deja la sesión abierta en un dispositivo y entra en otro, puede haber inconsistencias en los registros.
 
 Actualmente, para verificarlo, deben hacer una revisión puesto por puesto utilizando Excel y comparando la información registrada con los equipos físicos.
 
@@ -52,13 +50,11 @@ Por esta razón, el software debería permitir llevar un registro actualizado de
 4. ¿Cómo se suelen calcular actualmente los costos para fabricar un producto?
 
 RESPUESTA:
-El software no solo manejaría inventario, sino también el cálculo de costos de fabricación o producción.
+Se suelen calcular con métodos clásicos como matemáticas en hojas de calculo y exel.
 
-La idea es que permita saber cuánto cuesta producir un determinado producto.
+Para calcularlo, deben tener en cuenta elementos como materiales, recursos y otros costos asociados.
 
-Para calcularlo, podría tener en cuenta elementos como materiales, recursos y otros costos asociados.
-
-Esto sería útil, por ejemplo, en empresas dedicadas a la instalación o creación de redes, donde se utilizan diferentes materiales y recursos.
+Optimizar y modernizarlos sería útil, por ejemplo, en empresas dedicadas a la instalación o creación de redes, donde se utilizan diferentes materiales y recursos.
 
 De esta manera, el sistema permitiría conocer el costo total de un trabajo o producto y facilitar el control de los costos de producción.
 
