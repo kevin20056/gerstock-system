@@ -169,7 +169,7 @@ Una tabla por caso crítico.
 | ------------------------ | ------------------------------------------------------------ |
 | **ID y nombre**          | CU-08 Calcular el costo de producción de un producto o trabajo |
 | **Actor principal**      | Gerente                                                      |
-| **Actores secundarios**  | —                                                            |
+| **Actores secundarios**  | Asistente IA                                                          |
 | **Requisitos que cubre** | RF-09, RF-08, RNF-01, RNF-03                                 |
 | **Precondiciones**       | El gerente inició sesión y los materiales tienen costo registrado |
 | **Disparador**           | El gerente necesita conocer cuánto cuesta fabricar un producto o realizar un trabajo (por ejemplo, instalar una red) |
