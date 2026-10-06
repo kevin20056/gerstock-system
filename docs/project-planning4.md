@@ -52,7 +52,7 @@ Un solo diagrama con:
 - Todos los casos del punto 1 y sus asociaciones con los actores.
 - Al menos una relación **`«include»`, `«extend»` o generalización**, justificada en una línea. Si el dominio no pide ninguna, se escribe por qué.
 
-**Imagen o enlace al diagrama:** ![Diagrama de casos de uso](../Code_Generated_Image.png)
+**Imagen o enlace al diagrama:** ![Diagrama de casos de uso](../Diagrama_gestion_inventario.png)
 
 **Justificación de las relaciones:**
 
