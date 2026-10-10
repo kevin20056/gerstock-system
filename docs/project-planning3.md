@@ -45,7 +45,7 @@ Enunciado del **Taller 3**. Se trabaja en clase, por parejas de equipos, y se en
 
 **Banco de preguntas por tipo:** plantillas que sirven para cualquier dominio. Se reemplaza lo que va entre guillemets *(«proceso», «elemento»)* por el vocabulario del proyecto propio. **Copiarlas sin adaptar no cuenta**: una pregunta que podría hacerse en cualquier proyecto no saca requisitos de este.
 
-| Tipo                | Para qué                                     | Plantillas                                                                                                                                               |
+| Tipo               | Para qué                                     | Plantillas                                                                                                                                               |
 | ------------------- | -------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Contexto**        | Entender el rol y el proceso completo        | ¿Cuál es su papel en «el negocio / el área»? · ¿Cómo se hace hoy «el proceso», desde que empieza hasta que termina? · ¿Quién más participa?              |
 | **Abierta**         | Encontrar el dolor                           | ¿Qué es lo que más le complica de «el proceso»? · ¿Qué le quita más tiempo en la semana? · Si pudiera cambiar una sola cosa, ¿cuál sería?                |
