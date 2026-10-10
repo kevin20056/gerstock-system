@@ -1,108 +1,176 @@
-# Ficha de equipo y dominio — Sesión 1
+# Created by https://www.toptal.com/developers/gitignore/api/python
+# Edit at https://www.toptal.com/developers/gitignore?templates=python
 
-Plantilla de la **actividad de cierre de la Clase 1**. Se diligencia en clase, en equipo, y se entrega al final de la sesión.
+### Python ###
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
 
-- **Equipos:** de 2 a 3 integrantes, fijos durante todo el curso.
-- **Entrega:** una ficha por equipo.
-- **Cada equipo elige un dominio distinto.**
+# C extensions
+*.so
 
----
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
 
-## 1. Identificación del equipo
+# PyInstaller
+#  Usually these files are written by a python script from a template
+#  before PyInstaller builds the exe, so as to inject date/other infos into it.
+*.manifest
+*.spec
 
-| Campo | Respuesta |
-|---|---|
-| Nombre del equipo | _(Gerstock)_ |
-| Fecha | _(14-09-2026)_ |
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
 
-| # | Integrante | Correo | Rol / responsabilidad |
-| --- | --- | --- | --- |
-| 1 | _(Kevin Rodriguez)_ | _(	kevin.gaviria.0107@miremington.edu.co)_ | Coordinación _(obligatorio)_ |
-| 2 | _(David Solarte)_ | _(david.solarte.3418@miremington.edu.co)_ | _(Desarrollador)_ |
-| 3 | _(Cristian Martinez)_ | _(cristian.martinez.2555@miremington.edu.co)_ | _(Gestor de cliente)_ |
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+cover/
 
-> El rol no es definitivo: se ajusta en la bitácora de gestión. Lo que sí queda fijo hoy es **quién coordina**.
+# Translations
+*.mo
+*.pot
 
----
+# Django stuff:
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
 
-## 2. Dominio propuesto
+# Flask stuff:
+instance/
+.webassets-cache
 
-**Dominio:** _(Gestión de inventarios y costos de producción para empresas.)_
+# Scrapy stuff:
+.scrapy
 
-**Problema que se quiere resolver** _(Optimizar los procesos de gestión de inventarios y cálculo de costos de producción de los productos registrados en el sistema.)_:
+# Sphinx documentation
+docs/_build/
 
-_(completar)_
+# PyBuilder
+.pybuilder/
+target/
 
-**Cómo se hace hoy sin software** _(Actualmente, algunas empresas gestionan sus inventarios y costos mediante Excel y hojas de cálculo, lo que puede generar pérdida de información, errores y procesos que consumen demasiado tiempo. Además, estas herramientas no siempre permiten realizar cálculos de costos de manera eficiente.
-)_:
+# Jupyter Notebook
+.ipynb_checkpoints
 
-_(completar)_
+# IPython
+profile_default/
+ipython_config.py
 
----
+# pyenv
+#   For a library or package, you might want to ignore these files since the code is
+#   intended to run in multiple environments; otherwise, check them in:
+# .python-version
 
-## 3. Usuarios del sistema
+# pipenv
+#   According to pypa/pipenv#598, it is recommended to include Pipfile.lock in version control.
+#   However, in case of collaboration, if having platform-specific dependencies or dependencies
+#   having no cross-platform support, pipenv may install dependencies that don't work, or not
+#   install all needed dependencies.
+#Pipfile.lock
 
-| Tipo de usuario | Qué necesita hacer en el sistema | ¿Tenemos acceso para entrevistarlo? |
-| --- | --- | --- |
-| _(Administrador)_ | _(Permitir el acceso de diferentes usuarios con permisos específicos.)_ | Sí / No — _(quién es)_ |
-| _(Gerentes)_ | _(Administrar inventarios y costos de producción.)_ | Sí / No — _(quién es)_ |
-| _(Colaboradores)_ | _(Administrar inventario)_ | Sí / No — _(quién es)_ |
+# poetry
+#   Similar to Pipfile.lock, it is generally recommended to include poetry.lock in version control.
+#   This is especially recommended for binary packages to ensure reproducibility, and is more
+#   commonly ignored for libraries.
+#   https://python-poetry.org/docs/basic-usage/#commit-your-poetrylock-file-to-version-control
+#poetry.lock
 
-> Al menos **un usuario real y accesible** es obligatorio: en la Clase 3 hay que hacerle una sesión de elicitación de verdad.
+# pdm
+#   Similar to Pipfile.lock, it is generally recommended to include pdm.lock in version control.
+#pdm.lock
+#   pdm stores project-wide configurations in .pdm.toml, but it is recommended to not include it
+#   in version control.
+#   https://pdm.fming.dev/#use-with-ide
+.pdm.toml
 
----
+# PEP 582; used by e.g. github.com/David-OConnor/pyflow and github.com/pdm-project/pdm
+__pypackages__/
 
-## 4. Capacidad del equipo
+# Celery stuff
+celerybeat-schedule
+celerybeat.pid
 
-**¿Por qué este equipo puede levantar requisitos de este dominio?** _(El sistema tendrá tres roles: el administrador gestionará usuarios y permisos; el gerente administrará el inventario y calculará costos de producción; y el usuario podrá consultar y modificar el inventario.)_
+# SageMath parsed files
+*.sage.py
 
-_(completar)_
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
 
----
+# Spyder project settings
+.spyderproject
+.spyproject
 
-## 5. Alcance tentativo
+# Rope project settings
+.ropeproject
 
-**Tres cosas que el sistema sí debe hacer**:
+# mkdocs documentation
+/site
 
-1. _(Administrar inventarios)_
-2. _(Gestionar costos de producción)_
-3. _(Gestionar tarear)_
-4. _(Se trabajara de forma local)_
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
 
-**Tres cosas que el sistema no va a hacer**:
+# Pyre type checker
+.pyre/
 
-1. _(Modificar precios de proveedor)_
-2. _(No manejará nómina ni recursos humanos.)_
-3. _(No gestionará pagos ni transacciones bancarias)_
+# pytype static type analyzer
+.pytype/
 
----
+# Cython debug symbols
+cython_debug/
 
-## 6. Autoverificación
+# PyCharm
+#  JetBrains specific template is maintained in a separate JetBrains.gitignore that can
+#  be found at https://github.com/github/gitignore/blob/main/Global/JetBrains.gitignore
+#  and can be added to the global gitignore or merged into this file.  For a more nuclear
+#  option (not recommended) you can uncomment the following to ignore the entire idea folder.
+#.idea/
 
-- [x] Hay **usuarios reales accesibles** para entrevistar en la Clase 3.
-- [ ] El dominio da para **10 requisitos funcionales y 5 no funcionales** sin inventarlos.
-- [ ] Los **tres casos críticos** se ven implementables end-to-end en seis semanas.
-- [x] El proyecto **no fue desarrollado** en otra asignatura ni se está reciclando.
-- [x] No es demasiado grande _(una red social completa)_ ni demasiado pequeño _(una calculadora)_.
-- [Sí] El sistema **maneja datos personales**: Sí / No. Si es Sí, aplica la Ley 1581 de 2012 en el numeral 10 de la Nota 1.
+### Python Patch ###
+# Poetry local configuration file - https://python-poetry.org/docs/configuration/#local-configuration
+poetry.toml
 
----
+# ruff
+.ruff_cache/
 
-## Ejemplo diligenciado
+# LSP config files
+pyrightconfig.json
 
-Referencia de nivel de detalle esperado. **No se puede usar este dominio.**
-
-- **Dominio:** control de turnos en una barbería de barrio con tres sillas.
-- **Problema:** los turnos se anotan en un cuaderno; los clientes llegan sin saber la espera y se van, y el dueño no sabe cuánto factura cada barbero al mes.
-- **Hoy:** cuaderno físico y llamadas telefónicas.
-- **Usuarios:** cliente _(reserva y consulta su turno)_, barbero _(ve su agenda del día)_, administrador _(cierra caja y ve el reporte mensual)_. Acceso real: el tío de un integrante es dueño del local.
-- **Sí hace:** reservar turno, ver agenda del día por barbero, cerrar caja con reporte de ingresos.
-- **No hace:** pagos en línea, domicilios, inventario de productos.
-
----
-
-## Flujo del Proyecto
-
-```bash
-UI → Controlador → ServicioIA «interfaz» → AdaptadorProveedor → API del modelo → AdaptadorSimulado → respuesta fija (pruebas)
-```
+# End of https://www.toptal.com/developers/gitignore/api/python
