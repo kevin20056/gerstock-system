@@ -141,11 +141,8 @@ class Gerente {
  +sugerirOrganizacion(): void
 }
 
-class rol {
--idRol: int
- -nombre: String
-}
 class Permiso {
+ -idRol: int
  -idPermiso: int
  -nombre: String
 }
@@ -211,10 +208,7 @@ Empresa --> Usuario
 Usuario <|-- Gerente
 Usuario <|-- Colaborador
 Usuario <|-- Administrador
-
-Administrador --> rol
-rol --> Permiso
-
+Administrador --> Permiso
 Administrador --> Equipo
 Movimiento ..> Equipo
 Movimiento ..> Producto
@@ -224,7 +218,7 @@ Gerente --> Tarea
 SugerenciaOrganizacionIA --> Inventario
 CalculoCosto --> Gerente
 DetalleCosto ..> CalculoCosto
-
+@enduml
 
 
 ---
