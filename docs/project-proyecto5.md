@@ -105,7 +105,127 @@ Un solo diagrama con:
 - Nombres en el vocabulario del dominio _(el que salió de la elicitación del Taller 3)_.
 - Si el proyecto tiene componente de IA, la **entidad que guarda el resultado** del modelo _(e.g. `SugerenciaIA` con fecha, entrada, salida y estado)_. El servicio que llama a la API **no** va en este taller.
 
-**Imagen o enlace al diagrama:** ![Diagrama de clases del punto 3](../Punto%203.png)
+**Imagen o enlace al diagrama:** ![Diagrama de clases UML](./diagrams/diagrama%20de%20clases%20UML.png)
+
+@startuml
+hide empty members
+
+class Empresa {
+ -idEmpresa: int
+ -nombre: String
+}
+
+class Usuario {
+ -idUsuario: int
+ -correo: String
+ -contrasena: String
+ +iniciarSesion(): boolean
+}
+
+class Administrador {
+ +administrarUsuarios(): void
+ +asignarPermisos(): void
+ +consultarCostos(): void
+}
+
+class Colaborador {
+ +registrarMovimientoInventario(): void
+ +registrarMovimientoEquipo(): void
+ +consultarExistencias(): void
+}
+
+class Gerente {
+ +asignarTarea(): void
+ +calcularCosto(): void
+ +modificarProducto(): void
+ +sugerirOrganizacion(): void
+}
+
+class rol {
+-idRol: int
+ -nombre: String
+}
+class Permiso {
+ -idPermiso: int
+ -nombre: String
+}
+class Producto {
+ -idProducto: int
+ -nombre: String
+ -cantidad: int
+ -costoUnitario: Decimal
+ +consultarDisponible(): int
+ +modificar(): void
+ +eliminar(): void
+}
+class Equipo {
+ -idEquipo: int
+ -codigo: String
+ -tipo: String
+ +consultarUbicacion(): Ubicacion
+}
+
+abstract class Movimiento {
+ -Ubicacion: int
+ -idMovimiento: int
+ -fecha: DateTime
+ +registrar(): void
+ +actualizarUbicacion(): void
+}
+class Inventario {
+ -tipo: String
+ -cantidad: int
+ +actualizarExistencias(): void
+}
+
+
+class Tarea {
+ -idTarea: int
+ -descripcion: String
+ -fechaLimite: Date
+ -estado: String
+ +asignar(): void
+}
+class CalculoCosto {
+ -idCalculo: int
+ -fecha: DateTime
+ -costoTotal: Decimal
+ +calcularTotal(): Decimal
+}
+
+class DetalleCosto {
+ -idDetalle: int
+ -concepto: String
+ -valor: Decimal
+}
+class SugerenciaOrganizacionIA {
+ -idSugerencia: int
+ -fecha: DateTime
+ -entrada: String
+ -salida: String
+ -estado: String
+ +registrarResultado(): void
+}
+
+Empresa --> Usuario
+Usuario <|-- Gerente
+Usuario <|-- Colaborador
+Usuario <|-- Administrador
+
+Administrador --> rol
+rol --> Permiso
+
+Administrador --> Equipo
+Movimiento ..> Equipo
+Movimiento ..> Producto
+Gerente --> Inventario
+Colaborador --> Inventario
+Gerente --> Tarea
+SugerenciaOrganizacionIA --> Inventario
+CalculoCosto --> Gerente
+DetalleCosto ..> CalculoCosto
+
+
 
 ---
 
