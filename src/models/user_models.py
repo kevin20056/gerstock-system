@@ -7,21 +7,21 @@ class RolEnum(str, Enum):
     GERENTE = "Gerente"
     COLABORADOR = "Colaborador"
 
-class RolBase(BaseModel):
-      id_rol: int
-      nombre: RolEnum
-      permisos: List[str] = []
+class Permiso(BaseModel):
+    id_permiso: int
+    id_rol: int
+    nombre: str
 
 class UsuarioBase(BaseModel):
-     correo: EmailStr
-     nombre: str
-     rol: RolEnum
+    correo: EmailStr
+    nombre: str
+    rol: RolEnum
 
 class UsuarioCreate(UsuarioBase):
     contrasena: str
 
 class UsuarioResponse(UsuarioBase):
-     id_usuario: int
-
-     class Config:
-          from_attributes = True
+    id_usuario: int
+    
+    class Config:
+        from_attributes = True
