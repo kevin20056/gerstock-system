@@ -12,7 +12,6 @@ def crear_usuario(usuario: UsuarioCreate):
     usuario_guardado = UsuarioResponse(
         id_usuario=nuevo_id,
         correo=usuario.correo,
-        nombre=usuario.nombre,
         rol=usuario.rol
     )
 

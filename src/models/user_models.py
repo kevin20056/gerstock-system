@@ -9,12 +9,10 @@ class RolEnum(str, Enum):
 
 class Permiso(BaseModel):
     id_permiso: int
-    id_rol: int
     nombre: str
 
 class UsuarioBase(BaseModel):
     correo: EmailStr
-    nombre: str
     rol: RolEnum
 
 class UsuarioCreate(UsuarioBase):
