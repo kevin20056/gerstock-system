@@ -141,40 +141,74 @@ class Gerente {
  +sugerirOrganizacion(): void
 }
 
+@startuml
+hide empty members
+
+class Empresa {
+ -idEmpresa: int
+ -nombre: String
+}
+
+class Usuario {
+ -idUsuario: int
+ -correo: String
+ -contrasena: String
+ +iniciarSesion(): boolean
+}
+
+class Administrador {
+ +administrarUsuarios(): void
+ +asignarPermisos(): void
+ +consultarCostos(): void
+}
+
+class Colaborador {
+ +registrarMovimientoInventario(): void
+ +registrarMovimientoEquipo(): void
+ +consultarExistencias(): void
+}
+
+class Gerente {
+ +asignarTarea(): void
+ +calcularCosto(): void
+ +modificarProducto(): void
+ +sugerirOrganizacion(): void
+}
+
 class Permiso {
- -idRol: int
  -idPermiso: int
  -nombre: String
 }
+
 class Producto {
  -idProducto: int
  -nombre: String
- -cantidad: int
  -costoUnitario: Decimal
  +consultarDisponible(): int
  +modificar(): void
  +eliminar(): void
 }
+
 class Equipo {
  -idEquipo: int
  -codigo: String
  -tipo: String
- +consultarUbicacion(): Ubicacion
+ +consultarUbicacion(): String
 }
 
-abstract class Movimiento {
- -Ubicacion: int
+class Movimiento {
+ -ubicacion: String
  -idMovimiento: int
  -fecha: DateTime
  +registrar(): void
  +actualizarUbicacion(): void
 }
+
 class Inventario {
  -tipo: String
  -cantidad: int
  +actualizarExistencias(): void
 }
-
 
 class Tarea {
  -idTarea: int
@@ -183,18 +217,16 @@ class Tarea {
  -estado: String
  +asignar(): void
 }
-class CalculoCosto {
- -idCalculo: int
+
+class CostoProducto {
+ -idCosto: int
  -fecha: DateTime
+ -concepto: String
+ -valor: Decimal
  -costoTotal: Decimal
  +calcularTotal(): Decimal
 }
 
-class DetalleCosto {
- -idDetalle: int
- -concepto: String
- -valor: Decimal
-}
 class SugerenciaOrganizacionIA {
  -idSugerencia: int
  -fecha: DateTime
@@ -205,19 +237,28 @@ class SugerenciaOrganizacionIA {
 }
 
 Empresa --> Usuario
+
 Usuario <|-- Gerente
 Usuario <|-- Colaborador
 Usuario <|-- Administrador
+
 Administrador --> Permiso
 Administrador --> Equipo
+Administrador --> Movimiento
+
+Colaborador --> Inventario
+Colaborador --> Movimiento
+
 Movimiento ..> Equipo
 Movimiento ..> Producto
+
 Gerente --> Inventario
-Colaborador --> Inventario
 Gerente --> Tarea
+
 SugerenciaOrganizacionIA --> Inventario
-CalculoCosto --> Gerente
-DetalleCosto ..> CalculoCosto
+
+CostoProducto ..> Producto : calcula costo
+
 @enduml
 
 
