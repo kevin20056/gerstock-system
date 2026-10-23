@@ -19,6 +19,7 @@ def numero(texto):
 def iniciar():
     print("=== GERSTOCK ===")
     user = c.login(input("Usuario: "), input("Clave: "))
+#Ev
     if user:
         menu(user)
     else:
