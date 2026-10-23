@@ -1,0 +1,18 @@
+{
+  "usuarios": [
+    {
+      "usuario": "admin",
+      "clave": "1234",
+      "rol": "administrador"
+    },
+    {
+      "usuario": "keving",
+      "clave": "1234",
+      "rol": "colaborador"
+    }
+  ],
+  "productos": [],
+  "equipos": [],
+  "movimientos": [],
+  "tareas": []
+}
